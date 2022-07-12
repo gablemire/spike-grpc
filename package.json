@@ -1,0 +1,19 @@
+{
+  "name": "spike-grpc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "rimraf src/generated/* && pbjs -t static-module -w commonjs -o src/generated/grpc-test.js grpc-test.proto && pbts -o src/generated/grpc-test.d.ts src/generated/grpc-test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "protobufjs-cli": "^1.0.0",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "protobufjs": "^7.0.0"
+  }
+}

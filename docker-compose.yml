@@ -1,0 +1,6 @@
+version: "3.8"
+services:
+  grpc-test:
+    image: jbaojunior/grpc-test:latest
+    ports:
+      - "5551:5551"
