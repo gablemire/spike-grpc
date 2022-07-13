@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node .",
-    "generate": "rimraf src/generated/* && pbjs -t static-module -w commonjs -o src/generated/grpc-test.js grpc-test.proto && pbts -o src/generated/grpc-test.d.ts src/generated/grpc-test.js"
+    "generate": "rimraf src/generated/* && pbjs -t static-module -w commonjs --no-service --no-delimited --no-create -o src/generated/grpc-test.js grpc-test.proto && pbts -o src/generated/grpc-test.d.ts src/generated/grpc-test.js"
   },
   "author": "",
   "license": "ISC",
